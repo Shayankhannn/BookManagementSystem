@@ -57,6 +57,7 @@ public class Book implements Serializable {
             desBook = (Book) restoredObject;
             // TODO 7f: Print a message indicating that the book data was deserialized
             System.out.println(" the book data was deserialized.");
+            System.out.println("Deserialized Book:" + desBook.toString());
 
 
 

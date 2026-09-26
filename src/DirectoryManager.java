@@ -20,7 +20,7 @@ public class DirectoryManager {
         }
         else {
             // If not, loop through the array and print each file's name
-                System.out.println("List of books available in "+ directoryPath + "directory");
+            System.out.println("List of books available in "+ directoryPath + "directory");
             for (File file : filesName){
                 System.out.println("Title : "+file.getName());
             }
@@ -108,10 +108,10 @@ public class DirectoryManager {
         // TODO 5c: Attempt to delete the file using the delete() method from the File class
         if (file.delete()) {
             // If the file is deleted successfully, print a message indicating the same
-System.out.println("File deleted successfully!");
+            System.out.println("File deleted successfully!");
         } else {
             // If the file deletion fails, print an error message
-System.out.println("Error Deleting File !");
+            System.out.println("Error Deleting File !");
         }
     }
 

@@ -47,17 +47,17 @@ public class Main {
 
 //     Task 5 testing
 
-//        String filePath = "./myBooks/1984.txt";
-//        DirectoryManager.deleteFile(filePath);
+        String filePath = "./myBooks/1984.txt";
+        DirectoryManager.deleteFile(filePath);
 
 
 //     Task 6 testing
 
-//        Book book = new Book("1984", "George Orwell", "978-0451524935");
-//        filePath = "./myBooks/book.ser";
-//        Book.serializeBook(book, filePath);
-//        Book deserializedBook = Book.deserializeBook(filePath);
-//        System.out.println("Deserialized Book: " + deserializedBook);
+        Book book = new Book("1984", "George Orwell", "978-0451524935");
+        filePath = "./myBooks/book.ser";
+        Book.serializeBook(book, filePath);
+        Book deserializedBook = Book.deserializeBook(filePath);
+        System.out.println("Deserialized Book: " + deserializedBook);
 
 
     }
