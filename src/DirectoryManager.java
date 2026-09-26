@@ -103,14 +103,14 @@ public class DirectoryManager {
     // TODO 5a: Define a static void method called deleteFile with a single parameter fileName of type String
     public static void deleteFile(String fileName) {
         // TODO 5b: create a File object using the provided fileName
-
+        File file = new File(fileName);
         // TODO 5c: Attempt to delete the file using the delete() method from the File class
         if (file.delete()) {
             // If the file is deleted successfully, print a message indicating the same
-
+System.out.println("File deleted successfully!");
         } else {
             // If the file deletion fails, print an error message
-
+System.out.println("Error Deleting File !");
         }
     }
 
