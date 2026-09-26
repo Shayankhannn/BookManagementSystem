@@ -20,8 +20,8 @@ public class DirectoryManager {
         }
         else {
             // If not, loop through the array and print each file's name
-            for (File file : filesName){
                 System.out.println("List of books available in "+ directoryPath + "directory");
+            for (File file : filesName){
                 System.out.println("Title : "+file.getName());
             }
         }
@@ -88,11 +88,12 @@ public class DirectoryManager {
             File[] files = sourceDirectory.listFiles();
             // For each file, create a Path object using the file's name and the destDir
             for (File file : files) {
-
+                Path destinationFile = destPath.resolve(file.getName());
                 // Use the copy() method from the Files class to copy the file to the destination directory
 
+                Files.copy(file.toPath(),destinationFile);
                 // Print a message indicating that the file was copied
-
+                System.out.println("File copied: " + file.getName());
             }
         }
         catch(IOException e){
